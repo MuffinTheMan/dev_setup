@@ -34,6 +34,16 @@
     apt-get install openssh-server
     echo
 
+    echo INSTALLING PHPUNIT...
+    apt-get install phpunit -y 
+    echo
+
+    echo REMOVING LIBREOFFICE...
+    apt-get remove --purge libreoffice*
+    sudo apt-get clean
+    sudo apt-get autoremove
+    echo
+
     echo Done!
 
 exit
